@@ -1,0 +1,20 @@
+<%= form_for(@user) do |f| %>
+  <div class="control-group">
+    <%= f.label :email, class: "control-label emailLabel" %>
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+  <div class="control-group">
+    <%= f.label :password, class: "control-label passwordLabel"%>
+    <div class="controls">
+    <%= f.password_field :password, placeholder: "Password" %>
+    </div>
+    <div class="controls">
+    <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit  "Sign in", class: "btn btn-success signinBtn"%>
+  </div>
+
+<% end %>
