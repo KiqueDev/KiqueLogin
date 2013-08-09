@@ -4,11 +4,15 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.7'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 gem 'libv8', '~> 3.11.8'
 
-gem 'pg'
 
 gem 'authlogic'
 # Gems used only for assets and not required
