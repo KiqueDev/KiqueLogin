@@ -1,7 +1,6 @@
 Kique Login
 ===============
-Check the <a href="http://kiquelogin.herokuapp.com"><h2>live</h2></a> version  
-  
+<h2>Check the <a href="http://kiquelogin.herokuapp.com">live</a> version  </h2>
 <h2>Clone repo, cd into kiquelogin</h2> 
 <pre>git clone https://github.com/KiqueDev/KiqueLogin.git   
 cd KiqueLogin  
