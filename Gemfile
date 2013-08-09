@@ -6,7 +6,10 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
-    gem 'less-rails'
+end
+group :production do
+  gem 'pg'
+  gem 'less-rails'
   gem 'twitter-bootstrap-rails'
   gem 'formtastic'
   gem 'formtastic-bootstrap'
@@ -22,9 +25,7 @@ group :development, :test do
 
   # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
   gem 'jbuilder', '~> 1.2'
-end
-group :production do
-  gem 'pg'
+
 end
 # Gems used only for assets and not required
 # in production environments by default.
