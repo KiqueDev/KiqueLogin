@@ -9,24 +9,15 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
-  gem 'less-rails'
-  gem 'twitter-bootstrap-rails'
-  gem 'formtastic'
-  gem 'formtastic-bootstrap'
-
-  gem 'libv8', '~> 3.11.8'
-
-  gem 'authlogic'
-  # Use jquery as the JavaScript library
-  gem 'jquery-rails'
-
-  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-  gem 'turbolinks'
-
-  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-  gem 'jbuilder', '~> 1.2'
-
 end
+
+gem 'libv8', '~> 3.11.8'
+
+gem 'heroku'
+
+gem 'bootstrap_helper'
+
+gem 'authlogic'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -41,10 +32,22 @@ group :assets do
   gem 'uglifier', '>= 1.3.0'
 end
 
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'formtastic'
+gem 'formtastic-bootstrap'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
