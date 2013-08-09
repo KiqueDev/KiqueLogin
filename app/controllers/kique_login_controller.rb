@@ -13,6 +13,7 @@ class KiqueLoginController < ApplicationController
   # GET /users/new
   # GET /users/new.json
   def new
+    @user_session = UserSession.new
     @user = User.new
 
     respond_to do |format|

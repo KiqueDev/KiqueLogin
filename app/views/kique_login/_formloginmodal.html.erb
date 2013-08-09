@@ -1,0 +1,30 @@
+<!-- LOGIN MODAL -->
+<%= form_for @user_session, :url => user_session_path do |f| %>
+	<div id="myModalLogin" class="modal hide fade">
+	<div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	  <h3>Login</h3>
+	</div>
+	<div class="modal-body">
+	<!--   <form id="formLoginUser">
+	    <center>
+	    <input id="usernameLogin" type="text" placeholder="Username"><br/>
+	    <input id="passwordLogin" type="password" placeholder="Password"><br/>
+	    <div id="loginErroMsg"></div>
+	    </center>
+	  </form> -->
+	 <center>
+
+		<%= f.text_field :email, placeholder:"Email" %><br>
+		<%= f.password_field :password, placeholder:"Password" %><br>
+
+	</center>
+		
+	</div>
+	<div class="modal-footer">
+	  <center>
+	    <%= f.submit "Login", class: "btn btn-warning" %>
+	  </center>
+	</div>
+	</div>
+<% end %>
