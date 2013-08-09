@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+'ruby' '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -9,13 +10,11 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 gem 'libv8', '~> 3.11.8'
-
-gem 'heroku'
-
-gem 'bootstrap_helper'
 
 gem 'authlogic'
 # Gems used only for assets and not required
